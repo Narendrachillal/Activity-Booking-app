@@ -1,0 +1,520 @@
+{
+	"info": {
+		"_postman_id": "c6ea2c2d-1a92-413e-a16f-56a81d9046bd",
+		"name": "activityBookingApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37095511"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Narendra\",\r\n  \"email\": \"narendra@gmail.com\",\r\n  \"password\": \"password123\",\r\n  \"phone\": \"9876543210\"\r\n  \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Narendra\",\r\n  \"email\": \"narendra@gmail.com\",\r\n  \"password\": \"password123\",\r\n  \"phone\": \"9876543210\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "221"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"dd-sJmWeLLSbNWMc0i/wIi+BgrfCKE\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 11:43:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User registered\",\n    \"user\": {\n        \"name\": \"Narendra\",\n        \"email\": \"narendra@gmail.com\",\n        \"phone\": \"9876543210\",\n        \"password\": \"$2b$10$BMzelxhj0oK6Gz8ySDW9LO5Q8veAS2tJvSvz7eBBE357zYNufrk4q\",\n        \"_id\": \"681c98c4278cb0513496c612\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"narendra@gmail.com\",\r\n  \"password\": \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/api/auth/login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"narendra@gmail.com\",\r\n  \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "160"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a0-LvR63qL6pOENelCtLFBHFy6yAd0\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 16:06:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWM5OGM0Mjc4Y2IwNTEzNDk2YzYxMiIsImlhdCI6MTc0NjcyMDM4NH0.lHDK8EF9EJA6hTcks067dH26a47udA6x7zTT8Fv7m_0\"\n}"
+				}
+			]
+		},
+		{
+			"name": "activityList",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/activities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"activities"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/api/activities",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/activities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"activities"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1842"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"732-tvACvUZp9XBGdVk+tbRvVAzVfZg\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 15:19:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"681cca451b0727ff5d3f172c\",\n        \"title\": \"Cricket Match\",\n        \"description\": \"IPL Final 2025 at M. Chinnaswamy Stadium\",\n        \"location\": \"Bangalore\",\n        \"date\": \"2025-05-20T13:30:00.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"681cca451b0727ff5d3f172d\",\n        \"title\": \"Movie Night\",\n        \"description\": \"Avengers: Endgame Screening in 3D IMAX\",\n        \"location\": \"PVR Orion Mall\",\n        \"date\": \"2025-05-21T13:00:00.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"681cca451b0727ff5d3f172e\",\n        \"title\": \"Football Match\",\n        \"description\": \"India vs Bangladesh Friendly Match\",\n        \"location\": \"Kanteerava Stadium\",\n        \"date\": \"2025-05-25T11:30:00.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"681cca451b0727ff5d3f172f\",\n        \"title\": \"Standup Comedy Show\",\n        \"description\": \"Open Mic Night with Bangalore’s Best Comics\",\n        \"location\": \"The Humming Tree\",\n        \"date\": \"2025-05-22T14:30:00.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"681cca451b0727ff5d3f1730\",\n        \"title\": \"Music Concert\",\n        \"description\": \"Arijit Singh Live Concert 2025\",\n        \"location\": \"Phoenix Marketcity\",\n        \"date\": \"2025-06-01T13:30:00.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"681cca451b0727ff5d3f1731\",\n        \"title\": \"Cycling Marathon\",\n        \"description\": \"50KM City Cycling Challenge\",\n        \"location\": \"Cubbon Park\",\n        \"date\": \"2025-05-30T00:30:00.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"681cca451b0727ff5d3f1732\",\n        \"title\": \"Coding Bootcamp\",\n        \"description\": \"Fullstack JavaScript Crash Course\",\n        \"location\": \"WeWork Indiranagar\",\n        \"date\": \"2025-05-28T04:30:00.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"681cca451b0727ff5d3f1733\",\n        \"title\": \"Yoga Workshop\",\n        \"description\": \"Mindfulness & Meditation with Priya\",\n        \"location\": \"Lalbagh Botanical Garden\",\n        \"date\": \"2025-05-24T01:30:00.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"681cca451b0727ff5d3f1734\",\n        \"title\": \"Art Exhibition\",\n        \"description\": \"Modern Art Gallery - Summer Collection\",\n        \"location\": \"National Gallery of Modern Art\",\n        \"date\": \"2025-05-29T05:30:00.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"681cca451b0727ff5d3f1735\",\n        \"title\": \"Food Festival\",\n        \"description\": \"Street Food Carnival 2025\",\n        \"location\": \"UB City\",\n        \"date\": \"2025-06-03T06:30:00.000Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "bookingAPI",
+			"protocolProfileBehavior": {
+				"protocolVersion": "auto"
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWM5OGM0Mjc4Y2IwNTEzNDk2YzYxMiIsImlhdCI6MTc0NjcxNDIzMH0.tHYOOzoiYfNCDVdxIrrQBOFo9z2Ws3GXIlY8M3OM7so",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWM5OGM0Mjc4Y2IwNTEzNDk2YzYxMiIsImlhdCI6MTc0NjcxNDIzMH0.tHYOOzoiYfNCDVdxIrrQBOFo9z2Ws3GXIlY8M3OM7so",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"activityId\": \"681cb9e635318a05eb557ca8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/bookings/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"bookings",
+						"book"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/api/bookings/book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWM5OGM0Mjc4Y2IwNTEzNDk2YzYxMiIsImlhdCI6MTc0NjcxNDIzMH0.tHYOOzoiYfNCDVdxIrrQBOFo9z2Ws3GXIlY8M3OM7so",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"activityId\": \"681cb9e635318a05eb557ca8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/bookings/book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"bookings",
+								"book"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "192"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c0-XmoWIm4oYyDqwlw1H8WpOnH/mjc\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 15:20:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Activity booked\",\n    \"booking\": {\n        \"user\": \"681c98c4278cb0513496c612\",\n        \"activity\": \"681cb9e635318a05eb557ca8\",\n        \"_id\": \"681ccbb4155257dc2f686902\",\n        \"bookedAt\": \"2025-05-08T15:20:20.786Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "myBooking",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWM5OGM0Mjc4Y2IwNTEzNDk2YzYxMiIsImlhdCI6MTc0NjcxNDIzMH0.tHYOOzoiYfNCDVdxIrrQBOFo9z2Ws3GXIlY8M3OM7so",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWM5OGM0Mjc4Y2IwNTEzNDk2YzYxMiIsImlhdCI6MTc0NjcxNDIzMH0.tHYOOzoiYfNCDVdxIrrQBOFo9z2Ws3GXIlY8M3OM7so",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/bookings/my-bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"bookings",
+						"my-bookings"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/api/bookings/my-bookings",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWM5OGM0Mjc4Y2IwNTEzNDk2YzYxMiIsImlhdCI6MTc0NjcyMDM4NH0.lHDK8EF9EJA6hTcks067dH26a47udA6x7zTT8Fv7m_0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/bookings/my-bookings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"bookings",
+								"my-bookings"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "394"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18a-/C4CKorldfAdnz4697R3CipQbbQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 16:09:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"681cbf80909d100278c96b17\",\n        \"user\": \"681c98c4278cb0513496c612\",\n        \"activity\": null,\n        \"bookedAt\": \"2025-05-08T14:28:16.804Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"681cc037909d100278c96b1b\",\n        \"user\": \"681c98c4278cb0513496c612\",\n        \"activity\": null,\n        \"bookedAt\": \"2025-05-08T14:31:19.430Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"681ccbb4155257dc2f686902\",\n        \"user\": \"681c98c4278cb0513496c612\",\n        \"activity\": null,\n        \"bookedAt\": \"2025-05-08T15:20:20.786Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		}
+	]
+}
