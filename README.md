@@ -74,7 +74,7 @@ npm run dev
 | Method | Endpoint           | Description                                          |
 | :----- | :----------------- | :--------------------------------------------------- |
 | `POST` | `/api/bookings`    | Book an activity (requires `activityId` in the body) |
-| `GET`  | `/api/bookings/me` | Get logged-in user’s bookings                        |
+| `GET`  | `/api/bookings/my-booking` | Get logged-in user’s bookings                        |
 
 
 📝 For protected routes, send JWT token in headers:
