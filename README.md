@@ -2,7 +2,7 @@
 
 A simple RESTful backend API built with **Node.js**, **Express.js**, and **MongoDB** for booking activities like cricket matches, movies, football games, and more.  
 
-This is a submission for the **Backend Developer Assignment**.
+
 
 ---
 
